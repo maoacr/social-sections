@@ -1,3 +1,35 @@
+:root {
+  --mainColor: #512050;
+  --secundaryColor: #F7F2F8;
+  --thirtColor: #868187;
+  --white: #fff;
+}
+
 *{
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: var(--mainColor);
+}
+#description{
+  font-size: .8rem;
+  line-height: 1.5rem;
+  color: var(--thirtColor);
+  margin-bottom: 10px;
+  font-weight: 100;
 }
