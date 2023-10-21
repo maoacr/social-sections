@@ -1,12 +1,12 @@
 :root {
   --mainColor: #512050;
-  --secundaryColor: #F7F2F8;
+  --secundaryColor: #f7f2f8;
   --thirtColor: #868187;
-  --pink: #B2689F;
+  --pink: #b2689f;
   --white: #fff;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,16 +19,18 @@ body {
   padding: 60px 20px;
   text-align: center;
 }
-
-h1{
-  font-size: 2rem;
+main {
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2.2rem;
   max-width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
   color: var(--mainColor);
 }
-#description{
-  font-size: .8rem;
+#description {
+  font-size: 0.8rem;
   line-height: 1.5rem;
   color: var(--thirtColor);
   font-weight: 100;
@@ -36,12 +38,20 @@ h1{
 
 /* Second Section */
 
-.rate-container{
-  margin: 30px 0;
+.Rates-container {
+  display: flex;
 }
 
-.rate-card{
+.rate-container {
   width: 100%;
+  max-width: 500px;
+  margin: 30px 0;
+  padding: 5px 20px;
+}
+
+.rate-card {
+  width: 100%;
+  max-width: 500px;
   height: 70px;
   border-radius: 10px;
   background-color: var(--secundaryColor);
@@ -52,16 +62,17 @@ h1{
   justify-content: space-around;
 }
 
-h2{
+h2 {
   color: var(--mainColor);
   font-weight: 400;
 }
 
 /* Last section */
 
-.comment-container{
+.comment-container {
   background-color: var(--mainColor);
   width: 100%;
+  max-width: 500px;
   height: 200px;
   border-radius: 10px;
   color: var(--white);
@@ -72,19 +83,19 @@ h2{
   margin-top: 14px;
 }
 
-.profile-data{
+.profile-data {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
 }
 
-.profile-photo{
+.profile-photo {
   border-radius: 50%;
   width: 30px;
   margin-right: 20px;
 }
 
-.data{
+.data {
   text-align: left;
 }
 
@@ -93,9 +104,52 @@ h2{
   color: var(--pink);
 }
 
-.comment-container p{
-  font-size: .7rem;
+.comment-container p {
+  font-size: 0.7rem;
   text-align: left;
   line-height: 1.2rem;
   color: var(--secundaryColor);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .Info-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .Detail-container {
+    width: 50%;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .Rates-container {
+    width: 50%;
+  }
+
+  .rate-card {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    height: 50px;
+    margin: 20px 0;
+  }
+  .stars-container {
+    margin-right: 30px;
+  }
+  .Comments-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .comment-container {
+    width: 32%;
+  }
 }
