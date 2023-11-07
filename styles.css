@@ -43,6 +43,7 @@ h1 {
 
 .Rates-container {
   display: flex;
+
   justify-content: center;
 }
 
